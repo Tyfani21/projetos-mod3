@@ -1,6 +1,5 @@
 function validaAuthAPI(key) {
-    const chave = 0
-    
+    const chave = MongoDB;
     if(key === chave){
         return true;
     }else{

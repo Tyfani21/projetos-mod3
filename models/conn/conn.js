@@ -6,8 +6,9 @@ const username = 'db_adm'
 const password = 'q8nLNP95iveKT4W'
 
 
-function Conn(url,porta,banco){
-    mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.u90bu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+function Conn(url,user,pass, banco){
+    mongoose.connect(`${url}/${banco}`, {
+        
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }).then(() => {
